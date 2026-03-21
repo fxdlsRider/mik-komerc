@@ -1,0 +1,6 @@
+# robots.txt für MIK Komerc
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mik-komerc.com/sitemap.xml

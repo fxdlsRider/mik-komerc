@@ -1,0 +1,82 @@
+/**
+ * Navigation
+ */
+
+.navigationWrapper {
+    display: flex;
+    justify-content: space-between;
+    /* Logo links, Navigation rechts */
+    align-items: center;
+    /* Vertikal zentriert */
+    padding: 1rem;
+
+    /* Sticky Navigation */
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+    /* Wichtig! Sonst sieht man Content durchscheinen */
+    z-index: 100;
+    /* Über anderen Elementen */
+
+    /* ... existing styles ... */
+    border-bottom: .07rem solid rgb(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+    color: var(--color-primary);
+    /* mik-komerc Rot */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Listen (für Haupt-Links + Sprachen/Heart) */
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+    /* Abstand zwischen Items */
+    list-style-type: none;
+    /* Keine Bullet-Points */
+}
+
+/* Navigation Links - Base Style */
+.nav-link {
+    color: var(--color-gray-800);
+    /* Dunkelgrau */
+    text-decoration: none;
+    /* Kein Unterstrich */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    /* Sanfter Farbwechsel */
+}
+
+/* Navigation Links - Hover State */
+.nav-link:hover {
+    color: var(--color-primary);
+    /* Rot beim Hover */
+}
+
+/* Navigation Links - Active State (aktuelle Seite) */
+.nav-link.active {
+    color: var(--color-primary);
+    /* Rot für aktive Seite */
+    font-weight: 600;
+    /* Etwas fetter */
+}
+
+/* Herz Icon rot färben */
+.navigation img[src*="heart"] {
+    filter: invert(12%) sepia(95%) saturate(7468%) hue-rotate(357deg) brightness(91%) contrast(114%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover Effekt */
+.navigation img[src*="heart"]:hover {
+    transform: scale(1.1);
+}

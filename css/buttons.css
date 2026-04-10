@@ -1,0 +1,80 @@
+/**
+ * Buttons
+ */
+
+ button {
+    all: unset;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+/* Primary Button (White on Red Background) */
+.btn-primary,
+a.btn-primary {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-radius: .25rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover,
+a.btn-primary:hover {
+    background-color: var(--color-gray-50);
+}
+
+/* Secondary Button (Glass Effect on Red Background) */
+.btn-secondary,
+a.btn-secondary {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    border: .05rem solid var(--color-white);
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: .25rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover,
+a.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* CTA Button */
+.btn-cta,
+a.btn-cta {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-cta:hover,
+a.btn-cta:hover {
+    background-color: var(--color-gray-50);
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background-color: var(--color-white);
+    border-radius: .25rem;
+    color: black;
+    font-weight: 600;
+}

@@ -80,3 +80,62 @@
 .navigation img[src*="heart"]:hover {
     transform: scale(1.1);
 }
+
+/* Mobile Standard: Nav versteckt, Burger sichtbar */
+.burger-menu-btn {
+    display: block;
+}
+
+.navigationWrapper div {
+    display: none;
+}
+
+/* Desktop: Nav sichtbar, Burger versteckt */
+@media (min-width: 768px) {
+    .burger-menu-btn {
+        display: none;
+    }
+
+    .navigationWrapper div {
+        display: block;
+    }
+}
+
+/* Burger Navigation Panel */
+.burger-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--color-white);
+    z-index: 200;
+    padding: 2rem;
+    
+    /* Versteckt: nach rechts außerhalb des Viewports */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    
+    list-style: none;
+}
+
+/* Panel offen */
+.burger-nav.open {
+    transform: translateX(0);
+}
+
+/* Overlay */
+.burger-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 150;
+}
+
+.burger-overlay.open {
+    display: block;
+}

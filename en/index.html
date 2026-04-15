@@ -54,7 +54,23 @@
                 <li><img src="../assets/icons/heart.svg" alt=""></li>
             </ul>
         </div>
+        <button class="burger-menu-btn" aria-label="Open navigation menu">
+            <img src="../assets/icons/menu.svg" alt="">
+        </button>
     </nav>
+    <div class="burger-overlay"></div>
+    <div class="burger-nav">
+        <button class="burger-close-btn" aria-label="Close navigation menu">
+            <img src="../assets/icons/x.svg" alt="">
+        </button>
+        <ul>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
     <main>
         <section class="hero">
             <div class="hero-text-overlay">
@@ -202,7 +218,7 @@
             <p>© 2026 mik-komerc. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="../js/burger-menu.js"></script>
 </body>
 
 </html>

@@ -119,6 +119,10 @@
     list-style: none;
 }
 
+.burger-nav ul {
+    list-style-type: none;
+}
+
 /* Panel offen */
 .burger-nav.open {
     transform: translateX(0);

@@ -140,9 +140,10 @@
     background-color: #b91c1c;
 }
 
-.btn-submit svg {
+.btn-submit img {
     width: 1.125rem;
     height: 1.125rem;
+    filter: brightness(0) invert(1);
 }
 
 .form-privacy {
@@ -278,4 +279,14 @@
 .quick-response p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.input-error {
+    border-color: var(--color-primary);
+}
+
+.error-message {
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
 }

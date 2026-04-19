@@ -29,31 +29,6 @@
 }
 
 /**
- * CSS Variables
- */
-
-:root {
-    /* Brand Colors */
-    --color-primary: #e7000b;
-    --color-primary-dark: #c20009;
-    --color-primary-light: #fee2e2;
-    
-    /* Neutral Colors */
-    --color-white: #ffffff;
-    --color-gray-50: #f9fafb;
-    --color-gray-600: #4b5563;
-    --color-gray-800: #1f2937;
-    
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --spacing-2xl: 4rem;
-}
-
-/**
  * Body
  */
 

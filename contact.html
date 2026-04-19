@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Contact - mik-komerc | Get in Touch</title>
+    <meta name="description" content="Contact mik-komerc for B2B cleaning product inquiries. Located in Niš, Serbia. Phone, email, and inquiry form available.">
+    <meta name="keywords" content="contact mik-komerc, B2B inquiry, Niš Serbia, cleaning products supplier contact">
+
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:title" content="Contact - mik-komerc | Get in Touch">
+    <meta property="og:description" content="Get in touch with our team for B2B cleaning product inquiries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mik-komerc.com/contact">
+    <meta property="og:image" content="https://mik-komerc.vercel.app/assets/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <nav class="navigationWrapper">
+        <p class="logo">mik-komerc</p>
+        <div>
+            <ul class="navigation">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+                <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+                <li><a href="contact.html" class="nav-link active" data-i18n="nav.contact"></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navigation">
+                <li><a class="lang-switch" data-lang="sr">🇷🇸</a></li>
+                <li><a class="lang-switch" data-lang="de">🇩🇪</a></li>
+                <li><a class="lang-switch" data-lang="en">🇬🇧</a></li>
+                <li><img src="assets/icons/heart.svg" alt=""></li>
+            </ul>
+        </div>
+        <button class="burger-menu-btn" aria-label="Open navigation menu">
+            <img src="assets/icons/menu.svg" alt="">
+        </button>
+    </nav>
+    <div class="burger-overlay"></div>
+    <div class="burger-nav">
+        <button class="burger-close-btn" aria-label="Close navigation menu">
+            <img src="assets/icons/x.svg" alt="">
+        </button>
+        <ul>
+            <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+            <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+            <li><a href="contact.html" class="nav-link active" data-i18n="nav.contact"></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero -->
+        <section class="page-hero">
+            <h1 data-i18n="contact.hero_title"></h1>
+            <p data-i18n="contact.hero_subtitle"></p>
+        </section>
+
+        <!-- Contact Form + Info -->
+        <section class="contact-wrapper">
+            <div class="contact-grid">
+                <!-- Form -->
+                <div class="contact-form-wrapper">
+                    <h2 data-i18n="contact.form_heading"></h2>
+                    <form class="contact-form" action="https://formspree.io/f/xrerqqbl" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-i18n="contact.label_first_name"></label>
+                                <input type="text" id="firstName" name="firstName" data-i18n-placeholder="contact.placeholder_first_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" data-i18n="contact.label_last_name"></label>
+                                <input type="text" id="lastName" name="lastName" data-i18n-placeholder="contact.placeholder_last_name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.label_email"></label>
+                                <input type="email" id="email" name="email" data-i18n-placeholder="contact.placeholder_email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.label_phone"></label>
+                                <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.placeholder_phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" data-i18n="contact.label_company"></label>
+                            <input type="text" id="company" name="company" data-i18n-placeholder="contact.placeholder_company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="businessType" data-i18n="contact.label_business_type"></label>
+                            <select id="businessType" name="businessType">
+                                <option value="" data-i18n="contact.option_business_type_default"></option>
+                                <option value="restaurant" data-i18n="contact.option_restaurant"></option>
+                                <option value="hotel" data-i18n="contact.option_hotel"></option>
+                                <option value="hospital" data-i18n="contact.option_hospital"></option>
+                                <option value="industrial" data-i18n="contact.option_industrial"></option>
+                                <option value="other" data-i18n="contact.option_other"></option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productInterest" data-i18n="contact.label_product_interest"></label>
+                            <select id="productInterest" name="productInterest">
+                                <option value="" data-i18n="contact.option_product_default"></option>
+                                <option value="dishwashing" data-i18n="contact.option_dishwashing"></option>
+                                <option value="handsoap" data-i18n="contact.option_handsoap"></option>
+                                <option value="laundry" data-i18n="contact.option_laundry"></option>
+                                <option value="packaging" data-i18n="contact.option_packaging"></option>
+                                <option value="other" data-i18n="contact.option_other"></option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.label_message"></label>
+                            <textarea id="message" name="message" rows="5"
+                                data-i18n-placeholder="contact.placeholder_message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <img src="assets/icons/send.svg" alt="">
+                            <span data-i18n="contact.btn_submit"></span>
+                        </button>
+
+                        <p class="form-privacy" data-i18n="contact.form_privacy"></p>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <h3 data-i18n="contact.info_heading"></h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/map-pin.svg" alt="">
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.info_address_label"></h4>
+                                <p data-i18n="contact.info_address"></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/phone.svg" alt="">
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.info_phone_label"></h4>
+                                <p data-i18n="contact.info_phone1"></p>
+                                <p data-i18n="contact.info_phone2"></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/mail.svg" alt="">
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.info_email_label"></h4>
+                                <p data-i18n="contact.info_email1"></p>
+                                <p data-i18n="contact.info_email2"></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/clock.svg" alt="">
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.info_hours_label"></h4>
+                                <p data-i18n="contact.info_hours"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="contact-map">
+                        <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600&h=400&fit=crop"
+                            alt="Office Location">
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="contact-certifications">
+                        <h3 data-i18n="contact.cert_heading"></h3>
+                        <div class="cert-badges">
+                            <div class="cert-badge-small">
+                                <h4 data-i18n="contact.cert_iso9001_title"></h4>
+                                <p data-i18n="contact.cert_iso9001_label"></p>
+                            </div>
+                            <div class="cert-badge-small">
+                                <h4 data-i18n="contact.cert_iso14001_title"></h4>
+                                <p data-i18n="contact.cert_iso14001_label"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Response -->
+                    <div class="quick-response">
+                        <h3 data-i18n="contact.quick_response_heading"></h3>
+                        <p data-i18n="contact.quick_response_text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo" data-i18n="footer.logo"></h3>
+                <p class="footer-tagline" data-i18n="footer.tagline"></p>
+                <p class="footer-description" data-i18n="footer.description"></p>
+
+                <div class="footer-badges">
+                    <div class="footer-badge" data-i18n="footer.badge_iso9001"></div>
+                    <div class="footer-badge" data-i18n="footer.badge_iso14001"></div>
+                    <div class="footer-badge footer-badge-red" data-i18n="footer.badge_est"></div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.quick_links"></h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+                    <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact_heading"></h4>
+                <p data-i18n="footer.address"></p>
+                <p data-i18n="footer.phone1"></p>
+                <p data-i18n="footer.phone2"></p>
+                <p data-i18n="footer.email1"></p>
+                <p data-i18n="footer.email2"></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright"></p>
+        </div>
+    </footer>
+    <script src="js/burger-menu.js"></script>
+    <script type="module" src="js/language-switcher.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+
+</html>

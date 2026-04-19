@@ -85,6 +85,7 @@
 
 .lang-switch {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Mobile Standard: Nav versteckt, Burger sichtbar */

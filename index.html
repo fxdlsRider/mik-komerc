@@ -4,25 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mik-komerc | Professional B2B Cleaning Products</title>
 
-    <meta property="og:title" content="mik-komerc | Professional B2B Cleaning Products Since 1990">
+    <!-- SEO Meta Tags -->
+    <title>mik-komerc | Professional B2B Cleaning Products Since 1990</title>
+    <meta name="description"
+        content="ISO-certified manufacturer of professional cleaning products for B2B clients across Serbia and Europe. Family-owned since 1990. Quality, service, sustainability.">
+    <meta name="keywords"
+        content="B2B cleaning products, professional cleaning solutions, ISO certified, dishwashing liquids, hand soaps, Serbia">
+
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:title" content="mik-komerc | Professional B2B Cleaning Products">
     <meta property="og:description"
-        content="ISO-certified manufacturer of professional cleaning products for B2B clients across Serbia and Europe. Family-owned est. 1990. Quality, service, sustainability.">
+        content="ISO-certified manufacturer of professional cleaning products. Family-owned since 1990.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mik-komerc.com">
     <meta property="og:image" content="https://mik-komerc.vercel.app/assets/images/og-image.jpg">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
 
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon/favicon.svg">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
-    <script src="js/language-detection.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/cta.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/products.css">
 </head>
 
 <body>
+    <nav class="navigationWrapper">
+        <p class="logo">mik-komerc</p>
+        <div>
+            <ul class="navigation">
+                <li><a href="index.html" class="nav-link active" data-i18n="nav.home"></a></li>
+                <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navigation">
+                <li><a class="lang-switch" data-lang="sr">🇷🇸</a></li>
+                <li><a class="lang-switch" data-lang="de">🇩🇪</a></li>
+                <li><a class="lang-switch" data-lang="en">🇬🇧</a></li>
+                <li><img src="assets/icons/heart.svg" alt=""></li>
+            </ul>
+        </div>
+        <button class="burger-menu-btn" aria-label="Open navigation menu">
+            <img src="assets/icons/menu.svg" alt="">
+        </button>
+    </nav>
+    <div class="burger-overlay"></div>
+    <div class="burger-nav">
+        <button class="burger-close-btn" aria-label="Close navigation menu">
+            <img src="assets/icons/x.svg" alt="">
+        </button>
+        <ul>
+            <li><a href="index.html" class="nav-link active" data-i18n="nav.home"></a></li>
+            <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text-overlay">
+                <p class="overline" data-i18n="index.hero_overline"></p>
+                <h1 data-i18n="index.hero_title"></h1>
+                <p data-i18n="index.hero_subtitle"></p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary" data-i18n="index.hero_btn_products"></button>
+                    <button class="btn-secondary" data-i18n="index.hero_btn_contact"></button>
+                </div>
+
+                <div class="hero-badges">
+                    <div class="badge" data-i18n="index.hero_badge_iso9001"></div>
+                    <div class="badge" data-i18n="index.hero_badge_iso14001"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon"><img src="assets/icons/award.svg" alt="Award icon"></div>
+                <h3 data-i18n="index.feature_1_title"></h3>
+                <p data-i18n="index.feature_1_text"></p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><img src="assets/icons/shield-check.svg" alt="Shield icon"></div>
+                <h3 data-i18n="index.feature_2_title"></h3>
+                <p data-i18n="index.feature_2_text"></p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><img src="assets/icons/users.svg" alt="Users icon"></div>
+                <h3 data-i18n="index.feature_3_title"></h3>
+                <p data-i18n="index.feature_3_text"></p>
+            </div>
+        </section>
+
+        <section class="products-wrapper">
+            <div class="products">
+                <div class="products-header">
+                    <h2 data-i18n="index.products_heading"></h2>
+                    <p data-i18n="index.products_subheading"></p>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1752134593973-ac72a80ba7c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXNod2FzaGluZyUyMGxpcXVpZCUyMGJvdHRsZSUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzQyMDU1NjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Professional dishwashing liquid bottles for commercial kitchens">
+                        <div class="product-icon"><img src="assets/icons/droplets.svg" alt=""></div>
+                        <h3 data-i18n="index.product_1_title"></h3>
+                        <p data-i18n="index.product_1_text"></p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1585251173706-a225c43d979a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kJTIwc29hcCUyMGRpc3BlbnNlciUyMGNvbW1lcmNpYWx8ZW58MXx8fHwxNzc0MjA1NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Commercial hand soap dispensers for professional use">
+                        <div class="product-icon"><img src="assets/icons/sparkles.svg" alt=""></div>
+                        <h3 data-i18n="index.product_2_title"></h3>
+                        <p data-i18n="index.product_2_text"></p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1626379481874-3dc5678fa8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXVuZHJ5JTIwZGV0ZXJnZW50JTIwaW5kdXN0cmlhbCUyMGJvdHRsZXN8ZW58MXx8fHwxNzc0MjA1NTY1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Industrial laundry detergent bottles for commercial operations">
+                        <div class="product-icon"><img src="assets/icons/package-open.svg" alt=""></div>
+                        <h3 data-i18n="index.product_3_title"></h3>
+                        <p data-i18n="index.product_3_text"></p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1629227071576-e91767cc3024?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbGFzdGljJTIwYm90dGxlcyUyMHBhY2thZ2luZyUyMGNsZWFufGVufDF8fHx8MTc3NDIwNTU2NXww&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Quality plastic packaging bottles and containers">
+                        <div class="product-icon"><img src="assets/icons/spray-can.svg" alt=""></div>
+                        <h3 data-i18n="index.product_4_title"></h3>
+                        <p data-i18n="index.product_4_text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2 data-i18n="index.cta_title"></h2>
+                <p data-i18n="index.cta_text"></p>
+
+                <div class="cta-steps">
+                    <div class="cta-step">
+                        <div class="step-number">1</div>
+                        <p data-i18n="index.cta_step_1"></p>
+                    </div>
+                    <div class="cta-step">
+                        <div class="step-number">2</div>
+                        <p data-i18n="index.cta_step_2"></p>
+                    </div>
+                    <div class="cta-step">
+                        <div class="step-number">3</div>
+                        <p data-i18n="index.cta_step_3"></p>
+                    </div>
+                </div>
+
+                <button class="btn-cta" data-i18n="index.cta_btn"></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo" data-i18n="footer.logo"></h3>
+                <p class="footer-tagline" data-i18n="footer.tagline"></p>
+                <p class="footer-description" data-i18n="footer.description"></p>
+
+                <div class="footer-badges">
+                    <div class="footer-badge" data-i18n="footer.badge_iso9001"></div>
+                    <div class="footer-badge" data-i18n="footer.badge_iso14001"></div>
+                    <div class="footer-badge footer-badge-red" data-i18n="footer.badge_est"></div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.quick_links"></h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+                    <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact_heading"></h4>
+                <p data-i18n="footer.address"></p>
+                <p data-i18n="footer.phone1"></p>
+                <p data-i18n="footer.phone2"></p>
+                <p data-i18n="footer.email1"></p>
+                <p data-i18n="footer.email2"></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright"></p>
+        </div>
+    </footer>
+    <script src="js/burger-menu.js"></script>
+    <script type="module" src="js/language-switcher.js"></script>
 </body>
 
 </html>

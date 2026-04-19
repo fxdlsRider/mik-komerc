@@ -1,7 +1,10 @@
-const langLinks = document.querySelectorAll('.lang-switch');
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+import { setLanguage, applyTranslations, getLang } from './i18n.js';
 
-langLinks.forEach(link => {
-    const lang = link.dataset.lang;
-    link.href = `../${lang}/${currentPage}`;
+applyTranslations(getLang());
+
+document.querySelectorAll('.lang-switch').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        setLanguage(link.dataset.lang);
+    });
 });

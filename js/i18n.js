@@ -1,6 +1,6 @@
 const STORAGE_KEY = 'mik_lang';
 
-function getLang() {
+export function getLang() {
     return localStorage.getItem(STORAGE_KEY) || 'en';
 }
 
@@ -8,8 +8,8 @@ function resolve(obj, path) {
     return path.split('.').reduce((acc, key) => acc && acc[key], obj);
 }
 
-async function applyTranslations(lang) {
-    const url = `../translations/${lang}.json`;
+export async function applyTranslations(lang) {
+    const url = `translations/${lang}.json`;
     let data;
 
     try {
@@ -37,5 +37,3 @@ export async function setLanguage(lang) {
     await applyTranslations(lang);
 }
 
-// Apply on load
-applyTranslations(getLang());

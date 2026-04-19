@@ -187,5 +187,9 @@
     "business_type_required": "Branche ist erforderlich",
     "message_required": "Nachricht ist erforderlich",
     "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+  },
+  "thankyou": {
+    "title": "Vielen Dank für Ihre Anfrage!",
+    "subtitle": "Wir melden uns innerhalb von 24 Stunden an Werktagen."
   }
 }

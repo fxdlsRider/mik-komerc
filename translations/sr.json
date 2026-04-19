@@ -187,5 +187,9 @@
     "business_type_required": "Vrsta delatnosti je obavezna",
     "message_required": "Poruka je obavezna",
     "email_invalid": "Molimo unesite ispravnu email adresu"
+  },
+  "thankyou": {
+    "title": "Hvala na upitu!",
+    "subtitle": "Javićemo vam se u roku od 24 sata radnim danima."
   }
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Thank You - mik-komerc</title>
+    <meta name="description" content="Thank you for your inquiry. We'll get back to you within 24 hours.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <nav class="navigationWrapper">
+        <p class="logo">mik-komerc</p>
+        <div>
+            <ul class="navigation">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+                <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navigation">
+                <li><a class="lang-switch" data-lang="sr">🇷🇸</a></li>
+                <li><a class="lang-switch" data-lang="de">🇩🇪</a></li>
+                <li><a class="lang-switch" data-lang="en">🇬🇧</a></li>
+                <li><img src="assets/icons/heart.svg" alt=""></li>
+            </ul>
+        </div>
+        <button class="burger-menu-btn" aria-label="Open navigation menu">
+            <img src="assets/icons/menu.svg" alt="">
+        </button>
+    </nav>
+    <div class="burger-overlay"></div>
+    <div class="burger-nav">
+        <button class="burger-close-btn" aria-label="Close navigation menu">
+            <img src="assets/icons/x.svg" alt="">
+        </button>
+        <ul>
+            <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+            <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="page-hero">
+            <div class="contact-icon">
+                <img src="assets/icons/check-circle.svg" alt="">
+            </div>
+            <h1 data-i18n="thankyou.title"></h1>
+            <p data-i18n="thankyou.subtitle"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo" data-i18n="footer.logo"></h3>
+                <p class="footer-tagline" data-i18n="footer.tagline"></p>
+                <p class="footer-description" data-i18n="footer.description"></p>
+
+                <div class="footer-badges">
+                    <div class="footer-badge" data-i18n="footer.badge_iso9001"></div>
+                    <div class="footer-badge" data-i18n="footer.badge_iso14001"></div>
+                    <div class="footer-badge footer-badge-red" data-i18n="footer.badge_est"></div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.quick_links"></h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+                    <li><a href="products.html" class="nav-link" data-i18n="nav.products"></a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about"></a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact_heading"></h4>
+                <p data-i18n="footer.address"></p>
+                <p data-i18n="footer.phone1"></p>
+                <p data-i18n="footer.phone2"></p>
+                <p data-i18n="footer.email1"></p>
+                <p data-i18n="footer.email2"></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright"></p>
+        </div>
+    </footer>
+    <script src="js/burger-menu.js"></script>
+    <script type="module" src="js/language-switcher.js"></script>
+</body>
+
+</html>

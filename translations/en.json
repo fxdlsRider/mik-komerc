@@ -187,5 +187,9 @@
     "business_type_required": "Business Type is required",
     "message_required": "Message is required",
     "email_invalid": "Please enter a valid email address"
+  },
+  "thankyou": {
+    "title": "Thank you for your inquiry!",
+    "subtitle": "We'll get back to you within 24 hours during business days."
   }
 }
